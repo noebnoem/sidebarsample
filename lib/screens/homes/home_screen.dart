@@ -1,9 +1,7 @@
-import 'dart:io';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sidebarsample/xcore.dart';
 import 'package:sidebarx/sidebarx.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 class HomeScreen extends StatefulWidget{
   const HomeScreen({super.key});
@@ -26,7 +24,7 @@ class HomeScreenState extends State<HomeScreen>{
         title: Text(_getTitleByIndex(sidebarController.selectedIndex)),
          leading: IconButton(
            onPressed: () {
-             if (Platform.isAndroid && Platform.isIOS) {
+           if(kIsWeb){
                sidebarController.setExtended(true);
              }
              _key.currentState?.openDrawer();
