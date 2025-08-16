@@ -7,5 +7,4 @@ class AppColor{
   static const accentCanvasColor = Color(0xFF3E3E61);
   static const white = Colors.white;
   static const actionColor =  Color(0xFF5F5FA7);
-  static const divider = Divider(color: Colors.transparent, height: 0);
 }

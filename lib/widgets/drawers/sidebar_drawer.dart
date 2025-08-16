@@ -59,7 +59,6 @@ class SideBarDrawerWidget extends StatelessWidget{
          color: AppColor.canvasColor,
        ),
      ),
-     footerDivider: AppColor.divider,
      headerBuilder: (context, extended) {
        return SizedBox(
          height: 100,
