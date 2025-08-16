@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sidebarsample/xcore.dart';
 import 'package:sidebarx/sidebarx.dart';
@@ -30,7 +31,7 @@ class HomeScreenState extends State<HomeScreen>{
              }
              _key.currentState?.openDrawer();
            },
-           icon: const Icon(Icons.menu),
+           icon: const Icon(Icons.menu_rounded),
          ),
        ),
      drawer: SideBarDrawerWidget(controller: sidebarController),
